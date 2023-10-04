@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture
+{
+    margin: 0; 
+   
+}
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+    background-color:#FAFAF9;
+    min-height: 100vh;
+    font-family: 'Sora', sans-serif;
+    display: grid;
+    place-content: center;
+    
+    
+   
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.grid-container{
+    display: grid;
+    padding:1rem;
+    gap:2rem;
+}
+
+@media (min-width: 50rem) {
+.grid-container{    
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 35rem)) minmax(1rem, 1fr);
+    
+}
+
+.grid-container > *:first-child {
+    grid-column: 2;
+}
+
+.grid-container > *:last-child {
+    grid-column: 3;}
+
+
+}
+
+.first-container{
+    display:grid;
+
+    row-gap:1rem;
+    
+}
+
+.first-container h1{
+    font-weight:600;
+    font-size:2.25rem;
+}
+
+.first-container p{
+    font-weight:400;
+    font-size:1.25rem;
+    color:#52525A;
+    line-height:1.7;
+    max-width:37ch;
+    
+}
+
+.second-container{
+    display:grid;
+    row-gap:2rem;
+
+}
+
+
+
+
+
+
+.check
+{
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items:center;
+
+    color:#52525A;
+    font-size:0.875rem;
+}
+
+.check img{
+    margin-right:.5rem;
+}
+
+.checklist{
+    display: flex;
+    flex-direction:column;
+    gap:.7rem;
+}
+
+.upper-card{
+display: flex;
+
+gap:1rem;
+margin-bottom:1rem;
+}
+
+.google{
+    width:7rem;
+}
+
+.card1{
+    justify-self: right;
+    padding:2rem;
+    border-radius:16px;
+    max-width:358px;
+    background-color:#FFFFFF;
+}
+
+.card2{
+    padding:2rem;
+    border-radius:16px;
+    max-width:358px;
+    background-color:#FFFFFF;
+}
+
+.card-p{
+    color:#52525A;
+    line-height:1.7;
+    font-size:1rem;
+    max-width:24ch;
+    
+}
+
+.card-name{
+    font-size:1rem;
+    font-weight:600;
+}
+
+.stars{
+    display:flex;
+    column-gap:.2rem;
+}
+
+.card-text{
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+
+.main-star{
+    display: grid;
+    place-items: center;
+    width:2.75rem;
+    height:2.75rem;
+    border-radius:50%;
+    background-color:hsl(45, 94%, 60%);
+}
+
+
+
+.first-cont-star{
+    width:1.40rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
